@@ -1,0 +1,14 @@
+@use 'variable';
+
+@mixin base-size($width: 400px, $height: 100px) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex-layout($justify, $align, $pt) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  padding-top: $pt;
+  box-sizing: border-box;
+}
